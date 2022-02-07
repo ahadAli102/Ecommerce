@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.user.fragment.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/userSettingsFragmentProfileId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            android:id="@+id/userSettingsProfileImageViewId"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/single_product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userSettingsFragmentProfileId" />
+
+        <TextView
+            android:id="@+id/userSettingsFragmentNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahad"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/userSettingsProfileImageViewId"
+            app:layout_constraintStart_toStartOf="@+id/userSettingsProfileImageViewId"
+            app:layout_constraintTop_toBottomOf="@+id/userSettingsProfileImageViewId" />
+        <ImageView
+            android:id="@+id/userSettingsFragmentNameEditId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@+id/userSettingsFragmentNameId"
+            app:layout_constraintTop_toBottomOf="@+id/userSettingsProfileImageViewId" />
+
+        <TextView
+            android:id="@+id/userSettingsFragmentEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/userSettingsProfileImageViewId"
+            app:layout_constraintStart_toStartOf="@+id/userSettingsProfileImageViewId"
+            app:layout_constraintTop_toBottomOf="@+id/userSettingsFragmentNameId" />
+
+        <TextView
+            android:id="@+id/userSettingsFragmentChangePasswordId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change password?"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

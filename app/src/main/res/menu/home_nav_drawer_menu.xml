@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home_drawer_nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME"/>
+        <item android:id="@+id/home_drawer_nav_cart"
+            android:icon="@drawable/cart"
+            android:title="CART"/>
+        <item android:id="@+id/drawer_nav_settings"
+            android:icon="@drawable/ic_profile"
+            android:title="SETTINGS"/>
+        <item android:id="@+id/drawer_nav_logout"
+            android:icon="@drawable/logout"
+            android:title="LOG OUT"/>
+    </group>
+
+    <!--<item
+        android:title="MESSAGE">
+        <menu>
+            <item android:id="@+id/drawer_nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="SHARE"/>
+            <item android:id="@+id/drawer_nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="SEND"/>
+        </menu>
+    </item> -->
+
+</menu>
